@@ -1,0 +1,189 @@
+/*
+COLOR PALETTE
+Champagne  #FBE7C6
+Mint       #B4F8C8
+
+Celeste     #A0E7E5
+Cherry blossom pink #FFAEBC
+*/
+/* GLOBAL STYLES
+-------------------------------*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*Setting the defualt*/
+
+}
+ *,*::before, *::after {
+    box-sizing: inherit;
+ }
+html,body{
+    height: 100%;
+}
+body{
+    background: url(images/headphones.jpg) no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.4;
+
+    
+}
+h1, h2, h3,{
+    font-family:'Single Day', cursive;
+    font-weight: 400;
+    margin:0;
+
+    
+}
+h1 {
+    font-size:40px;
+    list-style: 0.5;
+}
+h2 {
+    font-size: 30px;
+
+}
+h3 {
+    font-size: 20px;
+    text-align: center;
+}
+/* links*/
+a{
+    color:#FFAEBC;
+}
+a:hover{
+    color:#B4F8C8;
+    text-decoration:none ;
+}
+footer a{
+    color:#FFAEBC;
+}
+footer a:hover{
+    color: #FFAEBC;
+
+}
+.btn{
+    background: #FBE7C6;
+    color: #FFAEBC;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    line-height: normal;
+    border-radius: 7px;
+    letter-spacing: 0.1
+    
+}
+.content-wrapper{
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+/* HOME
+-----------------------------------*/
+.home {
+    background:url(images/headphones.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction:column ;
+}
+
+.home .content-wrapper {
+    flex: 1 0 auto;
+}
+.content-bg{
+    background: #FBE7C6;
+    padding:30px;
+}
+
+/* RESUME
+-----------------------------------*/
+.resume header::before{
+    background:url(images/clouds.jpeg) center;
+    background-size: cover;
+    content:"";
+    display:block;
+    height: 375px;
+}
+.resume-section {
+    margin-bottom: 50px;
+
+}
+.resume-section h2 {
+    border-bottom: 2px dashed  #B4F8C8;
+}
+.download-link {
+    position:fixed;
+    top:5px;
+    left:5px;
+
+}
+
+
+/*PROJECTS
+-----------------------------------*/
+.project-item {
+
+    margin:30px 0;
+}
+.project-item img {
+    width:300px;
+
+}
+@media screen and (min-width:860px){
+    .project-item {
+        display: flow-root;
+
+    }
+    .project-item img {
+        float:left;
+        margin-right:20px;
+    }
+}
+
+
+/* WORK EXPERIENCE
+-----------------------------------*/
+.work-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* EDUCATION
+------------------------------------*/
+
+
+/* FOOTER
+------------------------------------*/
+
+footer{
+    background-color: #FBE7C6;
+    color: #FFAEBC;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    
+}
+.socials{
+    list-style-type:none;
+    padding:0;
+}
+.socials li{
+    display: inline-block;
+    margin-left:10px;
+
+    
+
+}
+.socials img {
+    width: 32px;
+    padding: 10px;
+}
+.socials img:hover{
+    opacity:0.5;
+}
+
